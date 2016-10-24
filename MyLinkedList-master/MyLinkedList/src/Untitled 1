@@ -1,0 +1,34 @@
+class Node
+{
+	Node next, previous;
+	Object data;
+
+	public node(Object data, Node prev, Node next )
+
+	public void addFirst(Object data)
+	{
+		Node temp = new Node( data, null, head);
+		if(head != null)
+		{
+			head.previous = temp;
+		}
+		head = temp;
+		size++;
+	}
+
+	public void addSecond(Object data)
+	{
+		if(head != null)
+		{
+			head.next = new Node(data, head, head.next);
+		}
+		else
+		{
+			throw new IndexOutOfBounds("breh");
+		}
+		
+		
+		size++;
+	}
+}
+
