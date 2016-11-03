@@ -1,0 +1,18 @@
+public String toString()
+{
+	String s = head.data.toString();
+	ListNode curr = head;
+	if(head.next != null && head != null)
+	{
+		while(curr.next != null)
+		{
+			s += head.next.data;
+			curr = head.next;
+		}
+	}
+}
+
+public String reversedToString()
+{
+	
+}

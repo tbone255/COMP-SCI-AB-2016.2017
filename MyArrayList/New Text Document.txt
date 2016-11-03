@@ -1,0 +1,32 @@
+add with empty list
+head -> a size=1
+add to front
+
+add to middle
+add to end
+
+
+head.data = 2;
+
+head.next.data = 2;
+
+
+temp = new ListNode(2, head.next)
+head.next = temp;
+size++;
+
+head = new ListNode(2, head);
+size++;
+
+
+head.next.next = head;
+head.next = null;
+
+
+current = head;
+while(current.next.next != null)
+{
+	current = current.next;
+}
+current.next = null;
+
